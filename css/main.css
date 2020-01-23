@@ -1,0 +1,72 @@
+.nav-link:hover {
+  background-color: #547E4A;
+  border-radius: 5px;
+}
+.logo{
+	height: 30px;
+	width: 30px;
+}
+.pro_pic{
+	height: 70px;
+	width: 75px;
+}
+.pro_name{
+	font-size: 20px;
+}
+.profile {
+	width: 100%;
+	height: 300px;
+}
+.profile img{
+	width: 250px;
+	height: 300px;
+}
+.name h2{
+	font-size: 24px;
+	font-family: 'Roboto', sans-serif;
+}
+.name h3{
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+.name p i{
+	font-size: 25px;
+	color:#547E4A; 
+}
+.name a i{
+	font-size: 35px;
+	color:#547E4A; 
+}
+.bio_height{
+	height: 75px;
+}
+.Project_height{
+	height: 100px;
+}
+.contact_info tbody tr td{
+	font-size: 12px;
+}
+.contact_info thead tr th{
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+}
+.bg_color{
+	background-color: #547E4A;
+}
+.cal_logo{
+	font-size:40px;
+}
+.entry_time h2{
+	padding-top: 10px;
+	font-size: 20px;
+}
+.entry_time p{
+	font-size: 12px;
+}
+.show_att{
+	font-size: 18px;
+}
+footer{
+	background-color: #547E4A;
+}
