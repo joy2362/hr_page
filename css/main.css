@@ -68,5 +68,18 @@
 	font-size: 18px;
 }
 footer{
-	background-color: #547E4A;
+	background-color: #6FA362;
+}
+.table tbody tr td:hover{
+	cursor: pointer;
+	background: rgba(123, 123, 123, 0.3);
+}
+.btn_font{
+	font-family: 'Roboto', sans-serif;
+}
+.leave_head th{
+	font-size: 15px;
+}
+.cancleLeave{
+	height: 200px;
 }

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hr</title>
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <!--google font-->
+  <link href="https://fonts.googleapis.com/css?family=Gelasio|Lato|Playfair+Display|Roboto|Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<!--navbar design start-->
+	<nav class="navbar navbar-expand-lg navbar-light" style="background: #6FA362;">
+	<div class="container-fluid">
+	<!--logo-->
+  <a class="navbar-brand" href="index.html"><img src="image/logo1.jpg" class="logo"></a>
+  <!--make navbar collapseable-->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+	
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  	<!--left side element-->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link text-white" href="index.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white" href="#" id="employee" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Employee
+        </a>
+        <div class="dropdown-menu" aria-labelledby="employee">
+          <a class="dropdown-item" href="editProfile.html">Edit profile</a>
+        </div>
+      </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white" href="#" id="attendance" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Attendance
+        </a>
+        <div class="dropdown-menu" aria-labelledby="attendance">
+          <a class="dropdown-item" href="lateEntry.html">Employee Late Entry</a>
+          <a class="dropdown-item" href="earlyExit.html">Employee Early Exit</a>
+          <a class="dropdown-item" href="lateExit.html">Employee Late Exit</a>
+          <a class="dropdown-item" href="#">Late Attendance Reason</a>
+        </div>
+      </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white" href="#" id="leave" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Leave
+        </a>
+        <div class="dropdown-menu" aria-labelledby="leave">
+          <a class="dropdown-item" href="lateEntry.html">Leave Request</a>
+          <a class="dropdown-item" href="myLeave.html">My Leaves</a>
+          <a class="dropdown-item" href="applicationHistory.html">Application Status</a>
+          <a class="dropdown-item" href="leavestatus.html">Leave Status</a>
+          <a class="dropdown-item" href="cancleLeave.html">Cancled Leaves</a>
+          <a class="dropdown-item" href="altenativeLeave.html">View Alternate Holiday</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white" href="#" id="movement" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Movement
+        </a>
+        <div class="dropdown-menu" aria-labelledby="movement">
+          <a class="dropdown-item" href="#">Movement Application</a>
+          <a class="dropdown-item" href="#">Movement History</a>
+          <a class="dropdown-item" href="#">All Movement</a>
+        </div>
+      </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white" href="#" id="employee" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Bit Submit: Statement
+        </a>
+        <div class="dropdown-menu" aria-labelledby="employee">
+          <a class="dropdown-item" href="#">Visiting Card List</a>
+        </div>
+      </li>
+	<li class="nav-item">
+	    <form class="form-inline my-2 my-lg-0">
+	      <input class="form-control mr-sm-1" type="search" placeholder="Search" aria-label="Search">
+	      <button class="btn btn-primary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+	    </form>
+    </li>
+    <!--profile info-->
+  </ul>
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item dropdown">
+        <a class="nav-link  text-white dropleft" href="#" id="profile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          zahid <i class="fas fa-lock"></i>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="profile">
+        	<p class="dropdown-header">Profile</p>
+          <div class="text-center">
+        	   <img src="image/male.jpg" alt="pfofile picture" class="border border-primary rounded-sm pro_pic ">
+          </div >
+        	<div class="text-center">
+            <a href="editProfile.html" class="pro_name text-dark">abdullah zahid</a>	
+          </div>
+	        	<p>abdullahzahidjoy@gmail.com</p>
+        	<div class="dropdown-divider"></div>
+          <button class="btn btn-primary float-right btn-sm">Sign out</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+<!--end navbar-->
+<!--main content start-->
+	<div class="container">
+    <!--this is breadcrumb section-->
+		<div class="row">
+      <div class="col-sm-4 pt-3">
+        <nav aria-label="breadcrumb ">
+          <ol class="breadcrumb bg-white">
+            <li class="breadcrumb-item">You are here:</li>
+            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="editProfile.html" >Edit Profile</a> </li>
+          </ol>
+        </nav>
+      </div>
+      <div class="col-sm-6"></div>
+      <div class="col-sm-2 pt-4 pl-2">
+        <a href="#" class="text-dark"><i class="fas fa-sliders-h"></i> Filter</a>
+        <a href="#" class="text-dark"><i class="fas fa-shield-alt"></i> Get Help</a>
+      </div>
+    </div>
+    <hr>
+    <!--end breadcrumb section-->
+    <!--this is dashboard section-->
+    <div class="row">
+      <div class="col-sm-4">
+        <h2 class="pl-3">Edit Profile</h2>
+      </div>
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4"></div>
+    </div>
+    <hr>
+    <div class="row mb-3">
+      <div class="col-3">
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <a class="nav-link active text-center" id="v-pills-basic-tab" data-toggle="pill" href="#v-pills-basic" role="tab"
+            aria-controls="v-pills-basic" aria-selected="true"> Step:1 <br>Basic Information </a>
+          <a class="nav-link text-center" id="v-pills-educational-tab" data-toggle="pill" href="#v-pills-educational" role="tab"
+            aria-controls="v-pills-educational" aria-selected="false">Step:2 <br>Educational Information</a>
+          <a class="nav-link text-center" id="v-pills-account-tab" data-toggle="pill" href="#v-pills-account" role="tab"
+            aria-controls="v-pills-account" aria-selected="false">Step:3 <br>Account Information</a>
+        </div>
+      </div>
+      <div class="col-9">
+        <div class="tab-content" id="v-pills-tabContent">
+          <div class="tab-pane fade show active" id="v-pills-basic" role="tabpanel" aria-labelledby="v-pills-basic-tab">
+            <form action="" method="" >
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="role">Role Name</label>
+                        <select class="form-control" id="role">
+                          <option>Select Role</option>
+                          <option selected>Admin</option>
+                          <option>Director</option>
+                          <option>Employee</option>
+                          <option>HR Admin</option>
+                          <option>Manager</option>
+                          <option>Marketing</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  
+                <div class="form-group">
+                  <label for="fristName">Frist Name</label>
+                  <input type="name" class="form-control" id="fristName" value="Abdullah">
+                </div>
+                <div class="form-group">
+                  <label for="middleName">Middle Name</label>
+                  <input type="name" class="form-control" id="fristName" value="zahid">
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input type="name" class="form-control" id="lastName" value="joy">
+                </div>
+                <div class="form-group">
+                  <label for="fatherName">Fathers Name</label>
+                  <input type="name" class="form-control" id="fatherName" value="Md.********">
+                </div>
+                <div class="form-group">
+                  <label for="motherName">Mothers Name</label>
+                  <input type="name" class="form-control" id="motherName" value="********">
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <label for="dob">Date Of Birth</label>
+                    <input type="date" class="form-control" id="dob" value="1996-12-26" name="dob">
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="hire">Hire Date</label>
+                    <input type="date" class="form-control" value="2019-11-29" name="hire" id="hire">
+                  </div>
+                </div>
+                  <div class="form-group">
+                    <label for="mobile">Mobile</label>
+                    <input type="name" class="form-control" id="mobile" value="01780134797">
+                  </div>
+                  <div class="form-group">
+                    <label for="home">Home Phone</label>
+                    <input type="name" class="form-control" id="home" value="01780134797">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" value="abdullahzahidjoy@gmail.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Gender</label>
+                    <br>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" class="custom-control-input" checked id="male" name="gender">
+                      <label class="custom-control-label" for="male">Male</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" class="custom-control-input" id="female" name="gender">
+                      <label class="custom-control-label" for="female">Female</label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="present">Present Address</label>
+                      <textarea id="present" name="present" style="height:100px; width: 100%;">145/3-1,matikata Dhaka cantonment dhaka-1206</textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="present">Permanent Address</label>
+                      <textarea id="present" name="present" style="height:100px; width: 100%;">145/3-1,matikata Dhaka cantonment dhaka-1206</textarea>
+                  </div>
+
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-4">
+                  <div class="mb-2 text-center">
+                    <img src="image/male.jpg" style="height: 200px; width: 200px;" >
+                  </div>
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                  </div>
+                </div>
+                <div class="col-sm-1"></div>
+              </div>
+              <div class="text-center">
+                <a href="#" class="btn btn-outline-primary" style="pointer-events: none;">Previous</a>
+                <a class=" text-center btn btn-outline-primary" id="v-pills-educational-tab" data-toggle="pill" href="#v-pills-educational" role="tab"
+            aria-controls="v-pills-educational" aria-selected="false">Next</a>
+              </div>
+          </div>
+          <div class="tab-pane fade" id="v-pills-educational" role="tabpanel" aria-labelledby="v-pills-educational-tab">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="form-group">
+                <label for="institute">Institute Name</label>
+                <input type="name" class="form-control" id="institute" value="South East University">
+              </div>
+               <div class="row pl-2">
+                  <div class="form-group">
+                        <label for="degree">Degree Name</label>
+                        <select class="form-control" id="degree">
+                          <option>Select Degree</option>
+                          <option >S.S.C</option>
+                          <option>H.S.C</option>
+                          <option>B.S.C</option>
+                          <option selected>C.S.C</option>
+                          <option>B.B.A</option>
+                          <option>M.B.A</option>
+                          <option>B.S.C(Hons)</option>
+                          <option>M.B.S</option>
+                          <option>B.S.S(Hons)</option>
+                          <option>E.E.E</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="passing">Passing Year</label>
+                        <select id="pyear" class="form-control" name="pyear"></select>
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="name" class="form-control" id="subjecs" value="Php 7">
+                  </div>
+                  </div>
+                  <div class="col-sm-6">
+                   <div class="form-group">
+                    <label for="result">Result</label>
+                    <input type="name" class="form-control" id="result" value="3.41">
+                  </div>
+                  </div>
+                </div>
+            <div>
+            </div>
+            </div>
+            <div class="col-sm-3">
+              <button class="btn btn-outline-primary">Add Education</button>
+            </div>
+            <div class="col-sm-4">
+              <div class="mb-2 text-center">
+                <img src="image/male.jpg" style="height: 200px; width: 200px;" >
+              </div>
+            </div>
+        </div>
+        <div class="text-center">
+                <a href="#" class="btn btn-outline-primary">Previous</a>
+                <a class=" text-center btn btn-outline-primary" id="v-pills-educational-tab" data-toggle="pill" href="#v-pills-educational" role="tab"
+            aria-controls="v-pills-educational" aria-selected="false">Next</a>
+        </div>
+          </div>
+          <div class="tab-pane fade" id="v-pills-account" role="tabpanel" aria-labelledby="v-pills-account-tab">
+          <div class="row">
+            <div class="col-sm-4">
+               <div class="form-group">
+                    <label for="uname">Username</label>
+                    <input type="name" class="form-control" id="uname" value="joy2362">
+                  </div>
+                   <div class="form-group">
+                    <label for="pass">Password</label>
+                    <input type="password" class="form-control" id="pass" value="01780134797">
+                  </div>
+                   <div class="form-group">
+                    <label for="bioId">Biometric Id</label>
+                    <input type="name" class="form-control" id="bioId" value="123">
+                    <div class="mt-2">
+                      <input type="submit" name="update" value="Update" class="btn btn-outline-primary">
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"><div class="mb-2 text-center">
+                <img src="image/male.jpg" style="height: 200px; width: 200px;" >
+              </div></div>
+          </div>
+          </form>
+          <div class="text-center">
+                <a href="#" class="btn btn-outline-primary">Previous</a>
+                <a class=" text-center btn btn-outline-primary" id="v-pills-educational-tab" data-toggle="pill" href="#v-pills-educational" role="tab"
+            aria-controls="v-pills-educational" aria-selected="false">Next</a>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+</div>
+  <!--end main content-->
+  
+  <footer class="text-center text-white pt-1 pb-1">&copy; 2020 - PlanWay iT - All Rights Reserved.</footer>
+
+	<!-- javascript library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script>
+     // Add the following code if you want the name of the file appear on select
+      $(".custom-file-input").on("change", function () {
+        var fileName = $(this).val().split("\\").pop();
+        $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+      });
+      var start =new Date().getFullYear()-10;
+       var end = new Date().getFullYear() + 24;
+       var options = "";
+       var i = 0;
+       for(var year = start ; year <=end; year++)
+       {
+       if (i == 0){
+        options += "<option  >Select option</option>";
+        i++;
+       } else {
+        if (year == 2020) { 
+          options += "<option selected value="+ year+">"+ year +"</option>";
+        } else {
+          options += "<option value="+ year+">"+ year +"</option>";
+        }
+         }
+
+      }
+    document.getElementById("pyear").innerHTML = options;
+  </script>
+</body>
+</html>
